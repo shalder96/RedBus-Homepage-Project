@@ -1,0 +1,1148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header{
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  z-index: 150;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+main {
+  z-index: 100;
+}
+nav{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  position: relative;
+}
+nav > div:first-child{
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+nav > div:first-child img{
+  width: 100%;
+  height: auto;
+  
+}
+nav > div:nth-child(2){
+  width: 2px;
+  height: 30px;
+  background-color: #cecece;
+  margin-left: 50px;
+}
+nav > div:nth-child(3){
+  width: 100px;
+  height: 80px;
+  margin-left: 50px;
+  background-color: #d84e55;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+nav > div:nth-child(3) > img{
+  margin-top: 10px;
+  width: 35px;
+  height: auto;
+  border: none;
+}
+nav > div:nth-child(3) > p{
+  font-size: 1rem;
+  margin-top: 5px;
+  color: #fff;
+}
+nav > div:nth-child(4){
+  width: 100px;
+  height: 80px;
+  margin-left: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+nav > div:nth-child(4):hover,
+nav > div:nth-child(5):hover,
+nav > div:nth-child(6):hover{
+  background-color: #e7e7e7;
+  transition: all 0.5s;
+}
+nav > div:nth-child(4) > img {
+  margin-top: 10px;
+  width: 35px;
+  height: auto;
+  border: none;
+}
+nav > div:nth-child(4) > p{
+  font-size: 1rem;
+  margin-top: 5px;
+}
+nav > div:nth-child(5), 
+nav > div:nth-child(6){
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 8px;
+  position: absolute;
+  
+}
+nav > div:nth-child(5) {
+  left: 66rem;
+}
+nav > div:nth-child(5) img {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+nav > div:nth-child(5) img + p {
+  margin-top: 10px;
+}
+nav > div:nth-child(6) {
+  left: 74rem;
+  /* border: 1px solid red; */
+}
+nav > div:nth-child(6) i {
+  margin-right: 10px;
+  /* padding-left: 5px; */
+}
+nav > div:nth-child(6) i + p {
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+ /* dropdown button___________ */
+ .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 2px;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+  border-radius: 12px;
+  color: #aaa;
+  font-size: 14px;
+}
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+  transition: all 0.5s ease-in-out;
+}
+
+/* _______________End of nav bar here ____________________  */
+main {
+  width: 100%;
+}
+/* _______________ hero section starts here ________________  */
+#hero_section {
+  margin-top: 100px;
+}
+.hero{
+  background: url(HeroImageV2_C.png) 0% 0% / cover round;
+  height: 32.5rem;
+  z-index: 5;
+  
+}
+.hero h1{
+  color: #fff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  position: absolute;
+  top: 250px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* text-align: center; */
+}
+.search-conatiner{
+  width: 1000px;
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 226px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 12px, rgba(0, 0, 0, 0.05) 0px 0px 0px;
+  border-radius: 32px;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+}
+.tab{
+  width: 270px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-left: 30px;
+}
+.tab input {
+  width: 200px;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  font-size: 1.25rem;
+  padding: 20px 35px;
+  cursor: pointer;
+  
+
+}
+.tab input:focus {
+  transform: translateY(-15px);
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+  /* border: 1px solid red; */
+}
+.bar {
+  width: 1px;
+  height: 100%;
+  background-color: #aaa;
+}
+.arrow {
+  width: 30px;
+  height: 30px;
+  /* padding: 5px; */
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  position: absolute;
+  left: 255px;
+  background-color: #fff;
+
+}
+.arrow .fa-solid {
+  color: #aaa;
+}
+.arrow .fa-arrow-right-arrow-left {
+  width: 100%;
+  height: 100%;
+  margin-left: 7px;
+  margin-top: 5px;
+
+}
+.date{
+  width: 210px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-style: normal;
+  text-transform: capitalize;
+  margin-left: 15px;
+}
+.search_btn{
+  width: 250px;
+  height: 100%;
+  background-color: rgb(216, 78, 85);
+  padding: 40px;
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 24px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 0px 32px 32px 0px;
+  font-style: normal;
+  text-transform: uppercase;
+
+}
+.search_btn a {
+  text-decoration: none;
+  color: #fff;
+}
+/* _______________ Hero section ends here _________________ */
+
+/* __________________ offer section starts here ___________________  */
+#offer_section {
+  position: relative;
+}
+
+.offers {
+  height: 300px;
+  width: 90%;
+  margin-left: 5%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  top: -5rem;
+  border-radius: 2rem;
+  /* margin: 50px; */
+}
+.headline {
+  margin: 30px 30px 0px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.headline h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #333;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 39px;
+  font-family: "Montserrat", sans-serif;
+  word-break: break-word;
+}
+.headline h1 + button{
+  padding: 6px 24px;
+  border-radius: 30px;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #aaa;
+  background-color: #fff;
+}
+.headline h1 + button a {
+  color: blue;
+  text-decoration: none;
+
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  /* border: 2px solid green; */
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px;
+}
+.card {
+  width: 300px;
+  height: 180px;
+  border-radius: 15px;
+  background: linear-gradient(to right, rgb(70, 142, 70), rgb(82, 82, 176));
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  cursor: pointer;
+}
+.card_logo {
+  margin: 8px;
+  width: 80px;
+  height: 80px;
+}
+.card_logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.card_text {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  word-wrap: wrap;
+  gap: 5px;
+}
+.card_text div:first-child {
+  background-color: #dcddde44;
+  border-radius: 12px;
+  width: 45px;
+  text-align: center;
+}
+.card_text div:nth-child(2) {
+  font-weight: 600;
+}
+.card_text div:nth-child(3) {
+  font-size: 0.75rem;
+}
+.card_text div:last-child {
+  display: flex;
+  gap: 15px;
+}
+.card_text div:last-child div:first-child {
+  border: 1px dashed #fff;
+  text-transform: uppercase;
+  width: auto;
+  padding: 2px 8px;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+
+
+/* ___________________refer section _____________  */
+#refer {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+#refer div {
+  width: 90%;
+  margin-left: 5%;
+  position: absolute;
+  top: 20rem;
+}
+#refer div img {
+  width: 100%;
+}
+
+/*  ______________refer and earn section end __________________  */
+
+
+/* _______________ train section start __________________________ */
+#train_section {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+#train_section_container {
+  width: 80%;
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: absolute;
+  top: 32rem;
+  font-family: "Montserrat", sans-serif;
+}
+#left, #right {
+  width: 50%;
+}
+#left {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+#left div h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+#left div h1 span {
+  font-weight: 600;
+}
+#left div:nth-child(2){
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin-left: 15px;
+}
+#left div:nth-child(2) img {
+  width: 60px;
+  height: auto;
+}
+#left div:nth-child(2) p {
+  font-size: 1.25rem;
+  color: #d84e55;
+  font-weight: 500;
+}
+#left div:nth-child(3) {
+  max-width: 250px;
+  height: 3px;
+  background-color: #d84e55;
+  border-radius: 3px;
+}
+#left div:nth-child(4) p {
+  font-weight: 300;
+}
+#left div:nth-child(5) div,
+#left div:nth-child(6) div,
+#left div:nth-child(7) div {
+  display: flex;
+}
+
+#left div:nth-child(5) div img,
+#left div:nth-child(6) div img,
+#left div:nth-child(7) div img {
+  margin-right: 20px;
+  width: 30px;
+  height: auto;
+}
+#left div:nth-child(5) div h4,
+#left div:nth-child(6) div h4,
+#left div:nth-child(7) div h4{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#left button {
+  width: 250px;
+  padding: 12px 10px;
+  font-size: 1.25rem;
+  background-color: #d84e55;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+#left button,
+#left button span {
+  color: #fff;
+}
+#right {
+  position: relative;
+  display: flex;
+   
+}
+#right div {
+  position: absolute;
+  background: linear-gradient(to bottom, #c6e9ff, #fff1e7);
+  border-radius: 2rem 3rem 3rem 3rem;
+  clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);  /*Using clip path to achieve trapezium structure */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#right img {
+  position: absolute;
+  right: 0rem;
+  top: 6rem;
+}
+
+
+/* __________app section start ________________ */
+#app {
+  height: auto;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+#app .app_background {
+  width: 80%;
+  height: 35rem;
+  background-image: url(asset/appInstallbg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: contain;
+  position: absolute;
+  top: 75rem;
+  left: 10%;
+}
+.app_background {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#app_body {
+  display: flex;
+  align-items: center;
+}
+.app_background #app_headline {
+  position: relative;
+}
+.app_background #app_headline p {
+  color: #fff;
+  position: absolute;
+  top: 7rem;
+  left: 2rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+ }
+
+.app_background #app_box {
+  background-color: #fff;
+  width: 380px;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 14px;
+  margin-top: 180px;
+  margin-left: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #4a4a4a;
+}
+.app_background #app_box div:first-child,
+.app_background #app_box div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#rating {
+  display: flex;
+  gap: 25px;
+  margin-top: 16px;
+}
+#rating .rating_box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.rating_box div:first-child {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+}
+.rating_box div:first-child span {
+  font-size: 1rem;
+}
+.rating_box div:nth-child(2) {
+  font-size: 0.85rem;
+}
+#rating .bar {
+  width: 2px;
+  height: 100px;
+  background-color: #aaa;
+}
+#app_QR,
+#app_download {
+  margin-left: 50px;
+  margin-top: 140px;
+}
+#app_QR p,
+#app_download p {
+  color: #fff;
+  font-weight: 500;
+}
+#app_QR,
+#app_download {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#app_download .app_download_button {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ______________ primo background section start _______________  */
+
+.primo_background {
+  width: 80%;
+  height: 35rem;
+  background-image: url(asset/primoHome.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  position: absolute;
+  top: 152rem;
+  left: 10%;
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+#primo_box {
+  height: 100%;
+  width: 432px;
+  background-color: rgb(35, 48, 88);
+  padding: 80px 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  color: #fff;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 40px;
+  
+}
+#primo_box div{
+  font-size: 1.25rem;
+}
+#primo_box div h2 {
+  text-transform: capitalize;
+}
+
+/* ___________________ partner section start here ___________________  */
+
+#partner {
+  width: 80%;
+  height: 30rem;
+  position: absolute;
+  top: 200rem;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  color: #4a4a4a;
+  font-family: "Montserrat", sans-serif;
+}
+#partner div:first-child h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  /* line-height: 3rem; */
+  font-size: 2.75rem;
+  letter-spacing: 1px;
+}
+#partner > div:nth-child(2) {
+  line-height: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  margin-top: 3rem;
+}
+#partner > div:nth-child(2) > p {
+  font-size: 1.75rem;
+}
+#partner > div:nth-child(2) > a {
+  border-radius: 1rem;
+  border: 1px solid rgb(170, 170, 170);
+  padding: 0.25rem 1.25rem;
+  background-color: transparent;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgb(29, 29, 29);
+  cursor: pointer;
+}
+#partner > div:nth-child(2) a:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#partner > div:nth-child(3) {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 15px;
+  /* align-items: center;
+  justify-content: space-evenly; */
+}
+.rtc_logo {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ position: relative;
+}
+.rtc_logo img {
+  border: none;
+  width: 80px;
+  height: auto;
+}
+.rtc_logo div {
+  margin-top: 25px;
+  position: absolute;
+  top: 70px;
+}
+.rtc_logo div p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: rgb(29, 29, 29);
+  padding: 0.6rem 2rem;
+}
+.rtc_logo div:hover {
+  background-color: #eeeeee;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: inherit;
+  transition: all 0.5s ease-in-out;
+}
+
+
+/* ____________ PRIVATE BUS OPERATORS SECTION START ________________ */
+#private_bus {
+  width: 80%;
+  height: 30rem;
+  position: absolute;
+  top: 230rem;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  color: #4a4a4a;
+  /* background-color: #d84e55; */
+  font-family: "Montserrat", sans-serif;
+}
+#private_bus > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#private_bus > div:first-child > p {
+  font-size: 1.75rem;
+}
+#private_bus > div:first-child > a {
+  border-radius: 1rem;
+  border: 1px solid rgb(170, 170, 170);
+  padding: 0.25rem 1.25rem;
+  background-color: transparent;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgb(29, 29, 29);
+  cursor: pointer;
+}
+#private_bus > div:first-child a:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#private_bus > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
+  margin-top: 3rem;
+}
+#private_bus > div:last-child div{
+  padding: 8px 12px;
+  width: auto;
+}
+#private_bus > div:last-child div:hover {
+  width: auto;
+  background-color: #eeeeee;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: inherit;
+  transition: all 0.5s ease-in-out;
+}
+/* __________global presence section starts here ______________ */
+#global_presence {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  top: 270rem;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  color: #4a4a4a;
+  font-family: "Montserrat", sans-serif;
+}
+#global_presence div:first-child h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #000;
+  font-size: 2.75rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+#global_presence div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.country_logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.country_logo div:first-child {
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin-bottom: 0.75rem;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+.country_logo > div:first-child > img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+.country_logo > div:last-child > p {
+  color: #000;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.country_logo > div:last-child{
+  padding: 0.75rem 1.25rem;
+}
+.country_logo > div:last-child:hover {
+  background-color: #eeeeee;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: inherit;
+  transition: all 0.5s ease-in-out;
+}
+
+
+/* __________ Online ticket booking section start here ___________  */
+
+#book_online {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  top: 295rem;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  color: #4a4a4a;
+  font-family: "Montserrat", sans-serif;
+}
+#book_online >div > div:first-child h2 {
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: #000;
+  letter-spacing: 1px;
+}
+#book_online > div > div:last-child {
+  margin-top: 25px;
+}
+#book_online > div > div:last-child p {
+  font-weight: 300;
+}
+#book_online > div > div:last-child span a{
+  color: blue;
+  text-decoration: none;
+}
+
+
+/* ___________redbus deal section starts here _______________  */
+#redDeals {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  top: 322rem;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  color: #4a4a4a;
+  font-family: "Montserrat", sans-serif;
+}
+#redDeals > div > div:first-child h2{
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: #000;
+  letter-spacing: 1px;
+}
+#redDeals > div > div:nth-child(3){
+  border: 1px solid #aaa;
+  border-radius: 2rem;
+  margin-top: 1.5rem;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+#redDeals > div > div:nth-child(3) img {
+  width: 80px;
+  height: auto;
+}
+#redDeals > div > div:nth-child(3) > div:nth-child(2) {
+  position: absolute;
+  left: 10rem;
+}
+#redDeals > div > div:nth-child(3) > div:nth-child(2) > div:first-child {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#redDeals > div > div:nth-child(3) > div:nth-child(2) > div:first-child span {
+  color: #d84e55;
+  font-size: 1.75rem;
+}
+#redDeals > div > div:nth-child(3) > div:nth-child(2) > div:last-child {
+  font-weight: 500;
+}
+#redDeals > div > div:nth-child(3) > div:nth-child(2) > div:last-child span{
+color: #d84e55;
+}
+#redDeals > div > div:nth-child(3) > div:last-child {
+  padding: 10px 18px;
+  background-color: #d84e55;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+#redDeals > div > div:nth-child(3) > div:last-child a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ___________redDeal section ends here ___________________  */
+
+/* ____________ FAQs section starts here ____________  */
+#faqs {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  top: 345rem;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  color: #4a4a4a;
+  font-family: "Montserrat", sans-serif;
+}
+#faqs div div:first-child h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #000;
+}
+#faqs div div:nth-child(2) {
+  display: flex;
+  margin-top: 50px;
+}
+#faqs div div:nth-child(2) a:first-child {
+  color: #d84e55;
+}
+.underline-effect {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 50px;
+  /* display: inline-block; */
+  position: relative;
+  color: #333;
+
+}
+.underline-effect::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #aaa;
+  border-radius: 5px;
+  visibility: hidden;
+  transform: scale3d(0);
+  transition: all 0.3s ease-in-out;
+}
+.underline-effect.active::after,
+.underline-effect:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.underline-effect.active::after {
+  background-color: #d84e55;
+}
+
+#faqs > div > div:last-child {
+  margin-top: 30px;
+}
+#faqs > div > div:last-child div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+  padding: 25px;
+  color: #000;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+/* _________footer starts here ________________  */
+footer {
+  width: 100%;
+  clear: both;
+  color: #3e3e52;
+  height: auto;
+  background-color: #f7f7f7;
+  position: absolute;
+  top: 410rem;
+  gap: 2rem;
+}
+._footer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 5rem;
+}
+.line p {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.collapsible-line {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-bottom: 1px solid #eee;
+}
+.collapsible-line span {
+  margin-left: 95%;
+}
+#collapsedContent p {
+  margin-top: 25px;
+  font-size: 0.85rem;
+  word-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  color: #000;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+/* _______________ footer link section starts here______________  */
+.footer_link {
+  width: 86%;
+  margin-left: 7%;
+  margin-top: 8rem;
+  height: 25rem;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  /* justify-content: space-between; */
+  font-size: 0.85rem;
+  color: #4a4a4a;
+}
+.first {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
+  marker: none;
+}
+.first > div:first-child {
+  width: 100px;
+  height: auto;
+}
+.first div:first-child > img {
+  width: 100%;
+  height: 100%;
+}
+.link ul {
+  list-style: none;
+  line-height: 30px;
+}
+.link ul li {
+  cursor: pointer;
+}
+.link ul li b {
+  color: #000;
+  font-size: 1.25rem;
+}
+
+
+/* ____________ social links section __________  */
+.social {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 100px;
+}
+.social div:first-child {
+  cursor: pointer;
+}
+.social div:last-child a {
+  margin-right: 10px;
+  color: #000;
+}
